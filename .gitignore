@@ -1,0 +1,5 @@
+.idea
+node_modules
+test/public/bundle.*
+yarn-error.log
+public/bundle.*
