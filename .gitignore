@@ -4,3 +4,4 @@ test/public/bundle.*
 yarn-error.log
 /*.js
 /*.mjs
+public/bundle.*

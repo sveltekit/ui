@@ -15,13 +15,12 @@ module.exports = {
   },
   resolve: {
     alias: {
-      // 'sveltekit': path.resolve(__dirname, 'dist'),
       stores: path.resolve(__dirname, '../src/app/stores.js')
     },
     extensions: ['.mjs', '.js', '.svelte']
   },
   output: {
-    path: __dirname + '/public',
+    path: path.resolve(__dirname, '../public'),
     filename: '[name].js',
     chunkFilename: '[name].[id].js'
   },
@@ -62,10 +61,3 @@ module.exports = {
   ],
   devtool: prod ? false : 'source-map'
 };
-
-// function excludeModules(modulePath) {
-//   return /default-variables/.test(modulePath) || (/node_modules/.test(modulePath) &&
-//     !/node_modules\/svelte\//.test(modulePath) &&
-//     !/node_modules\/svelte\-select/.test(modulePath) &&
-//     !/node_modules\/sveltekit\//.test(modulePath));
-// }
