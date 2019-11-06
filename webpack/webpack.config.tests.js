@@ -9,7 +9,7 @@ const componentsTests = glob.sync("./src/components/*/*.spec.js");
 componentsTests.push('./test/main.js');
 
 const alias = {
-  // 'sveltekit': path.resolve(__dirname, 'dist'),
+  sveltekit: path.resolve(__dirname, '../'),
   helpers: path.resolve(__dirname, '../test/helpers.js')
 };
 

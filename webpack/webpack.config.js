@@ -15,6 +15,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      sveltekit: path.resolve(__dirname, '../'),
       stores: path.resolve(__dirname, '../src/app/stores.js')
     },
     extensions: ['.mjs', '.js', '.svelte']
