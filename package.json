@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "generateExports": "node build/generate-exports.js",
-    "build": "npm run generateExports && cross-env NODE_ENV=production webpack/webpack.config.js",
+    "build": "npm run generateExports && cross-env NODE_ENV=production --config webpack/webpack.config.js",
     "dev": "npm run generateExports && webpack-dev-server --content-base public --config webpack/webpack.config.js",
     "test": "webpack --content-base test/public --config webpack/webpack.config.tests.js && node test/runner.js",
     "test:browser": "webpack-dev-server --content-base test/public --config webpack.config.tests.js"
