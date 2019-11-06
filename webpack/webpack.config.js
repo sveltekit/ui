@@ -15,8 +15,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'sveltekit': path.resolve(__dirname),
-      stores: path.resolve(__dirname, './src/app/stores.js')
+      // 'sveltekit': path.resolve(__dirname, 'dist'),
+      stores: path.resolve(__dirname, '../src/app/stores.js')
     },
     extensions: ['.mjs', '.js', '.svelte']
   },
@@ -29,7 +29,7 @@ module.exports = {
     rules: [
       {
         test: /\.svelte$/,
-        exclude: excludeModules,
+        // exclude: excludeModules,
         use: {
           loader: 'svelte-loader',
           options: {
@@ -63,9 +63,9 @@ module.exports = {
   devtool: prod ? false : 'source-map'
 };
 
-function excludeModules(modulePath) {
-  return /default-variables/.test(modulePath) || (/node_modules/.test(modulePath) &&
-    !/node_modules\/svelte\//.test(modulePath) &&
-    !/node_modules\/svelte\-select/.test(modulePath) &&
-    !/node_modules\/sveltekit\//.test(modulePath));
-}
+// function excludeModules(modulePath) {
+//   return /default-variables/.test(modulePath) || (/node_modules/.test(modulePath) &&
+//     !/node_modules\/svelte\//.test(modulePath) &&
+//     !/node_modules\/svelte\-select/.test(modulePath) &&
+//     !/node_modules\/sveltekit\//.test(modulePath));
+// }

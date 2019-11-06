@@ -1,0 +1,13 @@
+.editorconfig
+.idea
+.prettierrc
+
+node_modules
+public
+test
+webpack
+build
+
+test/public/bundle.*
+yarn-error.log
+yarn.lock

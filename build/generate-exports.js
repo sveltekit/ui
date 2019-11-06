@@ -123,7 +123,7 @@ function createComponentIndex(dir, file) {
   if (defaultExport) _content += defaultExport;
 
   if (file !== 'Select') {
-    fs.writeFileSync(`./${file}.mjs`, _content);
+    fs.writeFileSync(`${file}.mjs`, _content);
   }
 }
 
