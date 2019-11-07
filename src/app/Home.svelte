@@ -89,7 +89,7 @@
 
     <code>$ npm i sveltekit</code>
 
-    <p>Import a component and its options (if needed)</p>
+    <p>Import a component and it's options (if needed)</p>
 
     {#if source}
       <div class="source">
