@@ -106,7 +106,7 @@
   <div class="content">
     <h2>About Sveltekit</h2>
     <p>
-      Started in 2017, Sveltekit has been used in in multiple enterprise
+      Started in 2018, Sveltekit has been used in multiple enterprise
       applications. The project was open-sourced in November 2019.
     </p>
     <p>It's still actively worked on, it's main contributors are:</p>
