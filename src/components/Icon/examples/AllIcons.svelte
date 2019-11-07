@@ -1,7 +1,7 @@
 <script>
   import Icon from 'sveltekit/Icon';
   import Card from 'sveltekit/Card';
-  import { ALL } from '../_iconData';
+  import * as All from '../_iconData';
 </script>
 
 <style>
@@ -41,11 +41,11 @@
 </style>
 
 <div class="container">
-  {#each Object.keys(ALL) as iconKey}
+  {#each Object.keys(All) as iconKey}
     <div class="option">
       <Card>
         <div class="icon">
-          <Icon iconData={ALL[iconKey]} />
+          <Icon iconData={All[iconKey]} />
           <p>{iconKey}</p>
         </div>
       </Card>

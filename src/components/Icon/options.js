@@ -1,8 +1,8 @@
-import { ALL } from './_iconData';
+import * as All from './_iconData';
 
 const icons = {}; 
 
-Object.keys(ALL).forEach(key => {
+Object.keys(All).forEach(key => {
   icons[key] = key;
 });
 
