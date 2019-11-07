@@ -33,7 +33,8 @@
     text-align: left;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    margin-left: 60px;
+    padding: 0;
   }
 
   .branding img {
@@ -112,7 +113,7 @@
       padding: 0 0 0 20px;
       width: 250px;
       height: 100px;
-      flex-grow: 0;
+      margin-left: 0px;
     }
 
     .branding img {
