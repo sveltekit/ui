@@ -24,20 +24,16 @@
 
   let ClassNames;
   $: {
-    ClassNames = classnames(
-      `type-${type}`,
-      `size-${size}`,
-      {
-        [`iconPosition-${iconPosition}`]: iconData,
-        isActive,
-        isBlock,
-        isSelected,
-        isOutlined,
-        isRounded,
-        isWaiting,
-        isWide
-      }
-    );
+    ClassNames = classnames(`type-${type}`, `size-${size}`, {
+      [`iconPosition-${iconPosition}`]: iconData,
+      isActive,
+      isBlock,
+      isSelected,
+      isOutlined,
+      isRounded,
+      isWaiting,
+      isWide
+    });
   }
 
   let HtmlDisabled;
@@ -65,7 +61,8 @@
     white-space: nowrap;
     text-decoration: none;
     position: relative;
-    transition: background 0.1s ease-out, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38);
+    transition: background 0.1s ease-out,
+      box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38);
     overflow: hidden;
   }
 
@@ -370,23 +367,26 @@
   }
 </style>
 
-
-<button class="button { ClassNames }" disabled="{ HtmlDisabled }" on:click="{onClick}" type="{ htmlType }">
-  { #if isWaiting }
-  <span class="spinner">
-    <Spinner></Spinner>
-  </span>
-  { /if }
+<button
+  class="button {ClassNames}"
+  disabled={HtmlDisabled}
+  on:click={onClick}
+  type={htmlType}>
+  {#if isWaiting}
+    <span class="spinner">
+      <Spinner />
+    </span>
+  {/if}
 
   <span class="inner">
-    { #if iconData }
-    <span class="icon">
-      <Icon { iconData }></Icon>
-    </span>
-    { /if }
+    {#if iconData}
+      <span class="icon">
+        <Icon {iconData} />
+      </span>
+    {/if}
 
     <span>
-      <slot></slot>
+      <slot />
     </span>
   </span>
 </button>
