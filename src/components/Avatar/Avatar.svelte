@@ -85,9 +85,9 @@
     align-items: center;
     justify-content: center;
     background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 50%;
-    font-weight: 700;
+    background-size: var(--Avatar-background-size, cover);
+    border-radius: var(--Avatar-border-radius, 50%);
+    font-weight: var(--Avatar-font-weight, 700);
   }
 
   .alt {
@@ -100,8 +100,8 @@
   }
 
   .component {
-    width: 70%;
-    height: 70%;
+    width: var(--Avatar-component-width, 70%);
+    height: var(--Avatar-component-height, 70%);
   }
 </style>
 
