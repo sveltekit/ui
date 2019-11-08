@@ -48,27 +48,30 @@
 
 <style>
   .button {
-    border: none;
-    border-radius: 3px;
+    border: var(--Button-border, none);
+    border-radius: var(--Button-radius, 3px);
     cursor: pointer;
     display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    padding: 10px 16px;
-    text-align: center;
+    font-size: var(--Button-font-size, 14px);
+    font-weight: var(--Button-font-weight, 600);
+    line-height: var(--Button-line-height, 16px);
+    padding: var(--Button-padding, 10px 16px);
+    text-align: var(--Button-text-align, center);
     vertical-align: middle;
     white-space: nowrap;
     text-decoration: none;
     position: relative;
-    transition: background 0.1s ease-out,
-      box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38);
+    transition: var(
+      --Button-transition,
+      background 0.1s ease-out,
+      box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38)
+    );
     overflow: hidden;
   }
 
   .button:disabled {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: var(--Button-disabled-opacity, 0.5);
   }
 
   .button.isActive {
@@ -76,22 +79,21 @@
   }
 
   .size-large {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 11px 24px;
+    font-size: var(--Button-large-font-size, 18px);
+    line-height: var(--Button-large-line-height, 22px);
+    padding: var(--Button-large-padding, 11px 24px);
   }
 
   .size-compact {
-    line-height: 16px;
-    font-size: 13px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    font-size: var(--Button-compact-font-size, 13px);
+    line-height: var(--Button-compact-line-height, 16px);
+    padding: var(--Button-compact-padding, 7px 16px);
   }
 
   .size-mini {
-    line-height: 16px;
-    font-size: 12px;
-    padding: 4px 6px;
+    font-size: var(--Button-mini-font-size, 12px);
+    line-height: var(--Button-mini-line-height, 16px);
+    padding: var(--Button-mini-padding, 4px 6px);
   }
 
   .iconPosition-only {
@@ -129,7 +131,7 @@
   }
 
   .type-default.isOutlined {
-    background-color: #fff;
+    background-color: var(--white);
     border: 1px solid var(--green_4);
     color: var(--green_4);
   }
@@ -145,7 +147,7 @@
 
   .type-destructive {
     background-color: var(--red_4);
-    color: #fff;
+    color: var(--white);
   }
 
   .type-destructive:hover {
@@ -158,7 +160,7 @@
   }
 
   .type-destructive.isOutlined {
-    background: #fff;
+    background: var(--white);
     border: 1px solid var(--red_4);
     color: var(--red_4);
   }
@@ -207,7 +209,7 @@
 
   .type-subtle.isActive {
     background-color: var(--blue_4);
-    color: #fff;
+    color: var(--white);
   }
 
   .type-subtle:active {
