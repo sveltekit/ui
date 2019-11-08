@@ -28,7 +28,6 @@
   });
 </script>
 
-
 <style>
   .card {
     border-radius: 4px;
@@ -61,7 +60,6 @@
   }
 </style>
 
-
-<div class="card { ClassNames }" on:click="{onClick}">
-  <slot></slot>
+<div class="card {ClassNames}" on:click={onClick}>
+  <slot />
 </div>
