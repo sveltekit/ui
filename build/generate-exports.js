@@ -91,11 +91,11 @@ function documentCSSVars(dir) {
         let output = [];
         let array = [...content.matchAll(regexp)];
 
-        array.forEach(match => {
+        array.forEach(item => {
           let varRx = /(?<=var\()(.*)(?=,)/;
           let defaultRx = /(?<=,)(.*)(?=\))/;
-          let varName = match[0].match(varRx)[0];
-          let defaultValue = match[0].match(defaultRx)[0].trim();
+          let varName = item[0].match(varRx)[0];
+          let defaultValue = item[0].match(defaultRx)[0].trim();
 
           output.push({
             varName,
