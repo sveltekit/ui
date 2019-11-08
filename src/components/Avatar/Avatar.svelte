@@ -22,11 +22,20 @@
     if (bgColour) {
       BgColor = bgColour;
     } else {
-      BgColor = AltText.length < 2 ? DEFAULT_BG_COLOR : randomColor({ seed: AltText, luminosity: 'light' });
+      BgColor =
+        AltText.length < 2
+          ? DEFAULT_BG_COLOR
+          : randomColor({ seed: AltText, luminosity: 'light' });
     }
   }
 
-  $: TextColor = textColour || tinycolor(BgColor).saturate(50).darken(40).setAlpha(0.8).toString();
+  $: TextColor =
+    textColour ||
+    tinycolor(BgColor)
+      .saturate(50)
+      .darken(40)
+      .setAlpha(0.8)
+      .toString();
 
   let Width;
   $: {
@@ -40,7 +49,7 @@
     Width = sizeOptions[size] || (size || sizeOptions[options.size.SMALL]);
   }
 
-  let FontSize; 
+  let FontSize;
   $: {
     const scale = 1.3;
     const minAltLengthForSizing = 2;
@@ -50,7 +59,7 @@
       altLength = minAltLengthForSizing;
     }
 
-    FontSize = ((Width / altLength) / scale);
+    FontSize = Width / altLength / scale;
   }
 
   let Styles;
@@ -58,10 +67,10 @@
     Styles = inlinestyles(
       {
         'background-color': BgColor,
-        'color': TextColor,
+        color: TextColor,
         'font-size': `${FontSize}px`,
-        'width': `${Width}px`,
-        'height': `${Width}px`
+        width: `${Width}px`,
+        height: `${Width}px`
       },
       src && {
         'background-image': `url('${src}')`
@@ -69,17 +78,6 @@
     );
   }
 </script>
-
-<div class="avatar" style="{ Styles }">
-  { #if !src && !Component }
-  <span class="alt">{ AltText }</span>
-  { :else if Component }
-  <div class="component">
-    <svelte:component this="{Component}" {...componentProps} />
-  </div>
-  { /if }
-</div>
-
 
 <style>
   .avatar {
@@ -106,3 +104,13 @@
     height: 70%;
   }
 </style>
+
+<div class="avatar" style={Styles}>
+  {#if !src && !Component}
+    <span class="alt">{AltText}</span>
+  {:else if Component}
+    <div class="component">
+      <svelte:component this={Component} {...componentProps} />
+    </div>
+  {/if}
+</div>
