@@ -5,3 +5,4 @@ yarn-error.log
 /*.js
 /*.mjs
 public/bundle.*
+build/**

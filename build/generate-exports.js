@@ -64,7 +64,7 @@ function componentIndex(dir) {
 
     content += `}`;
 
-    fs.mkdir(`build/components/${item.name}`, () => {
+    fs.mkdir(`build/components/${item.name}`, { recursive: true }, () => {
       fs.writeFileSync(`build/components/${item.name}/index.js`, content);
     });
   });
@@ -79,6 +79,36 @@ function moduleExports(dir) {
     }
   });
 }
+
+function documentCSSVars(dir) {
+  const svelteFiles = glob.sync(dir + "/*/*.svelte");
+  
+  svelteFiles.forEach(async filename => {
+    await fs.readFile(filename, 'utf-8', (err, content) => {
+      let regexp = /var\(.+,\s*(.+)\)/g;
+
+      if (content) {
+        let output = [];
+        let array = [...content.matchAll(regexp)];
+
+        array.forEach(match => {
+          let varRx = /(?<=var\()(.*)(?=,)/;
+          let defaultRx = /(?<=,)(.*)(?=\))/;
+          let varName = match[0].match(varRx)[0];
+          let defaultValue = match[0].match(defaultRx)[0].trim();
+
+          output.push({
+            varName,
+            defaultValue
+          });
+        });
+
+        let targetFile = `build/components/${filename.split('/')[3]}/cssVars.json`;
+        fs.writeFileSync(targetFile, `${JSON.stringify(output)}`);
+      }
+    })
+  })
+};
 
 function getComponents(dir) {
   fs.readdirSync(dir).forEach((file) => {
@@ -130,3 +160,4 @@ function createComponentIndex(dir, file) {
 componentIndex('./src/components');
 getComponents('./src/components');
 moduleExports('./src/components');
+documentCSSVars('./src/components');

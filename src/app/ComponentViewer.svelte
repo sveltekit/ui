@@ -5,6 +5,7 @@
   let testOutput;
   let elem = undefined;
   let api = {};
+  let cssVarsJSON = [];
 
   $: name =
     $activeComponent.charAt(0).toUpperCase() + $activeComponent.slice(1);
@@ -35,6 +36,16 @@
         }
       });
     }
+  }
+
+  $: {
+    if (name) {
+      getCssVars();
+    }
+  }
+
+  async function getCssVars() {
+    cssVarsJSON = await require(`../../build/components/${name}/cssVars.json`);
   }
 </script>
 
@@ -106,7 +117,6 @@
     width: 100%;
     overflow: auto;
   }
-
 </style>
 
 <div class="container">
@@ -169,6 +179,28 @@
                 <code>{key}</code>
                 &nbsp;
               {/each}
+            </td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+  {/if}
+
+  {#if cssVarsJSON.length > 0}
+    <h2>CSS variables</h2>
+    <table>
+      <thead>
+        <th>Variable Name</th>
+        <th>Default value</th>
+      </thead>
+      <tbody>
+        {#each cssVarsJSON as { varName, defaultValue }}
+          <tr>
+            <td>
+              <code>{varName}</code>
+            </td>
+            <td>
+              <code>{defaultValue}</code>
             </td>
           </tr>
         {/each}
