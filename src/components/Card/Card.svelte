@@ -30,9 +30,9 @@
 
 <style>
   .card {
-    border-radius: 4px;
+    border-radius:  var(--Card-border-radius, 4px);
     background-color: var(--white);
-    box-shadow: 0 1px 2px 0 rgba(44, 62, 80, 0.12);
+    box-shadow: var(--Card-box-shadow, 0 1px 2px 0 rgba(44, 62, 80, 0.12));
   }
 
   .isClickable {
@@ -42,21 +42,21 @@
   }
 
   .isClickable:hover {
-    box-shadow: 2px 2px 4px 1px rgba(44, 62, 80, 0.08);
-    transform: translateY(-2px) translateZ(0);
+    box-shadow: var(--Card-hover-box-shadow, 2px 2px 4px 1px rgba(44, 62, 80, 0.08));
+    transform: var(--Card-hover-transform, translateY(-2px) translateZ(0));
   }
 
   .isClickable:active {
-    box-shadow: none;
-    transform: translateY(0) translateZ(0);
+    box-shadow: var(--Card-active-box-shadow, none);
+    transform: var(--Card-active-transform, translateY(0) translateZ(0));
   }
 
   .level-2 {
-    box-shadow: 0 2px 3px 0 rgba(44, 62, 80, 0.24);
+    box-shadow: var(--Card-lvl2-box-shadow, 0 2px 3px 0 rgba(44, 62, 80, 0.24));
   }
 
   .level-3 {
-    box-shadow: 1px 5px 6px 0 rgba(44, 62, 80, 0.24);
+    box-shadow: var(--Card-lvl3-box-shadow, 1px 5px 6px 0 rgba(44, 62, 80, 0.24));
   }
 </style>
 
