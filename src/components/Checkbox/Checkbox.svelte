@@ -8,7 +8,6 @@
   export let isChecked = false;
 </script>
 
-
 <style>
   .checkbox-container {
     display: inline-block;
@@ -59,7 +58,7 @@
     border-left: 0;
     transform: rotate(45deg) scale(0) translate(-50%, -50%);
     opacity: 0;
-    transition: all .1s cubic-bezier(.71, -0.46, .88, .6), opacity .1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
   }
 
   .check.checked::after {
@@ -74,7 +73,12 @@
 </style>
 
 <span class="checkbox-container">
-  <input { name } type="checkbox" disabled="{ isDisabled }" bind:checked="{isChecked}"
-    on:input="{event => dispatch('input', event)}" on:change="{event => dispatch('change', event)}" />
-  <span class="check {isChecked ? 'checked' : ''}"></span>
+  <input
+    {name}
+    type="checkbox"
+    disabled={isDisabled}
+    bind:checked={isChecked}
+    on:input={event => dispatch('input', event)}
+    on:change={event => dispatch('change', event)} />
+  <span class="check {isChecked ? 'checked' : ''}" />
 </span>
