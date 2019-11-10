@@ -121,11 +121,6 @@
     {/if}
 
     <ThemingSample />
-
-    <p>
-      Navigate the site to see full examples, demos, code samples, api and event
-      details for each component.
-    </p>
   </div>
 
   <div class="content">

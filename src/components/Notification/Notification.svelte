@@ -204,7 +204,7 @@
   }
 
   .notifyIcon {
-    background: var(--green_4);
+    background: var(--green_4, #51ce6c);
     border-radius: 50%;
     color: var(--white);
   }
@@ -218,7 +218,7 @@
   }
 
   .spinner {
-    color: var(--green_4);
+    color: var(--green_4, #51ce6c);
     position: absolute;
     top: 18px;
     left: 18px;
