@@ -97,10 +97,12 @@ function documentCSSVars(dir) {
           let varName = item.match(varRx)[0];
           let defaultValue = item.match(defaultRx)[0].trim();
 
-          output.push({
-            varName,
-            defaultValue
-          });
+          if (!output.find(item => item.varName === varName)) {
+            output.push({
+              varName,
+              defaultValue
+            });
+          }
         });
 
         let targetFile = `build/components/${filename.split('/')[3]}/cssVars.json`;
