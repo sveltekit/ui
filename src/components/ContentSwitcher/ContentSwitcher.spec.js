@@ -66,7 +66,7 @@ test(`${componentName}: props 'ItemIconComponent' and 'items > itemIconProps' ad
     }
   });
 
-  t.ok(testTarget.querySelector('path').getAttribute('d') === iconData.car.data);
+  t.ok(testTarget.querySelector('path').getAttribute('d') === CAR.data);
 
   contentSwitcher.$destroy();
 });

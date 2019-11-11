@@ -3,9 +3,6 @@ import Avatar from './Avatar.svelte';
 import Icon from '../Icon/Icon.svelte';
 import { PLANE } from '../Icon/_iconData';
 
-import iconData from '../Icon/iconData';
-
-
 const testTarget = document.getElementById('testTemplate');
 const componentName = Avatar.name;
 
@@ -101,7 +98,7 @@ test(`${componentName}: props 'Component' and 'componentProps' should override d
     }
   });
 
-  t.ok(testTarget.querySelector('.avatar path').getAttribute('d') === iconData.plane.data);
+  t.ok(testTarget.querySelector('.avatar path').getAttribute('d') === PLANE.data);
 
   avatar.$destroy();
 });

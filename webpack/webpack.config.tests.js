@@ -9,7 +9,7 @@ const componentsTests = glob.sync("./src/components/*/*.spec.js");
 componentsTests.push('./test/main.js');
 
 const alias = {
-  sveltekit: path.resolve(__dirname, '../'),
+  '@sveltekit/ui': path.resolve(__dirname, '../'),
   helpers: path.resolve(__dirname, '../test/helpers.js')
 };
 
@@ -27,7 +27,7 @@ module.exports = {
     extensions: ['.mjs', '.js', '.svelte']
   },
   output: {
-    path: __dirname + '/test/public',
+    path: __dirname + '../test/public',
     filename: '[name].js',
     chunkFilename: '[name].[id].js',
   },
@@ -35,7 +35,6 @@ module.exports = {
     rules: [
       {
         test: /\.svelte$/,
-        exclude: excludeModules,
         use: {
           loader: 'svelte-loader',
           options: {
@@ -67,10 +66,3 @@ module.exports = {
   ],
   devtool: prod ? false : 'source-map'
 };
-
-function excludeModules(modulePath) {
-  return /default-variables/.test(modulePath) || (/node_modules/.test(modulePath) &&
-    !/node_modules\/svelte\//.test(modulePath) &&
-    !/node_modules\/svelte\-select/.test(modulePath) &&
-    !/node_modules\/sveltekit\//.test(modulePath));
-}

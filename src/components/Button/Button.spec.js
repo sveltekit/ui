@@ -6,7 +6,7 @@ import Button from './Button.svelte';
 import options from './options';
 import Basic from './examples/Basic.svelte';
 import Icons from './examples/Icons.svelte';
-import { ADD } from '../../Icon/_iconData';
+import { ADD } from '../Icon/_iconData';
 
 
 const testTarget = document.getElementById('testTemplate');
@@ -30,7 +30,7 @@ test(`${componentName}: prop 'iconData' renders icon on button`, async (t) => {
     }
   });
 
-  t.ok(testTarget.querySelector('.button polygon').getAttribute('points') === iconData.add.data);
+  t.ok(testTarget.querySelector('.button polygon').getAttribute('points') === ADD.data);
 
   button.$destroy();
 });

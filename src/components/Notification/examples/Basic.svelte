@@ -29,7 +29,7 @@
         isLoading,
         actions: {
           Really: () => {
-            notification.close(key);
+            notification.complete(key);
           },
           'Try again': () => {
             notification.complete(key, 'yes I wanna try again');
