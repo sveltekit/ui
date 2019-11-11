@@ -118,7 +118,7 @@
   }
 
   .type-default {
-    background-color: var(--green_4);
+    background-color: var(--green_4, #51ce6c);
     color: var(--white);
   }
 
@@ -132,8 +132,8 @@
 
   .type-default.isOutlined {
     background-color: var(--white);
-    border: 1px solid var(--green_4);
-    color: var(--green_4);
+    border: 1px solid var(--green_4, #51ce6c);
+    color: var(--green_4, #51ce6c);
   }
 
   .type-default.isSelected {

@@ -154,7 +154,7 @@
   }
 
   input.hasSuccess {
-    border-color: var(--green_4) !important;
+    border-color: var(--green_4, #51ce6c) !important;
   }
 
   input::-webkit-input-placeholder {
