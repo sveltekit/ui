@@ -3,9 +3,7 @@
   "description": "Svelte UI Library",
   "version": "1.0.1",
   "homepage": "https://github.com/sveltekit/ui",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "repository": "git://github.com/sveltekit/ui.git",
   "scripts": {
     "generateExports": "node build/generate-exports.js",
     "build": "npm run generateExports && cross-env NODE_ENV=production webpack --config webpack/webpack.config.js",
@@ -51,5 +49,9 @@
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1",
     "wnumb": "^1.1.0"
-  }
+  },
+  "license": "LIL",
+  "keywords": [
+    "svelte"
+  ]
 }
