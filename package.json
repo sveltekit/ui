@@ -1,7 +1,7 @@
 {
   "name": "@sveltekit/ui",
   "description": "Svelte UI Library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/sveltekit/ui",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
