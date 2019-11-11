@@ -1,6 +1,14 @@
-# sveltekit ui lib
+# Sveltekit - Powerful, reliable & fully featured Svelte UI library
 
-## Dev Dependencies
+## Getting started
+```sh
+$  npm install @sveltekit/ui
+```
+
+
+## Dev
+
+## Dependencies
 - [node](https://nodejs.org/en): stable
 - [yarn](https://yarnpkg.com/en/): stable
 
@@ -9,7 +17,6 @@
 $  yarn
 ```
 
-### Dev
 To work locally on the components you'll need to yarn link the project to itself
 ```sh
 $  yarn link
@@ -18,12 +25,7 @@ $  yarn dev
 ```
 
 ## Tests
-Single run
-```sh
-$  yarn test
-```
-
-Run tests in browser (make sure you also have yarn dev running in another console)
+Run tests (make sure you also have yarn dev running in another console)
 ```sh
 $  yarn test:browser
 ```
