@@ -207,7 +207,7 @@ svg {
   --white: #fff;
   
   --primary_1: var(--blue_4);
-  --primary_2: var(--green_4);
+  --primary_2: var(--green_4, #51ce6c);
   --primary_3: var(--neutral_7);
   --primary_4: var(--silver);
   --primary_5: var(--white);

@@ -4,11 +4,14 @@
   import Tooltip from 'sveltekit/Tooltip';
 
   import CodeBlock from './CodeBlock.svelte';
+  import ThemingSample from './ThemingSample.svelte';
 
   let source = undefined;
+  let theming = undefined;
 
   onMount(async () => {
     source = await require(`!!raw-loader!./GettingStarted.svelte`).default;
+    theming = await require(`!!raw-loader!./ThemingSample.svelte`).default;
   });
 </script>
 
@@ -66,6 +69,7 @@
     border-radius: 5px;
     line-height: 22px;
     overflow-x: auto;
+    margin: 0 0 10px;
   }
 
   @media (min-width: 890px) {
@@ -79,9 +83,7 @@
 
 <div class="container">
   <div class="header">
-    <h1>
-      Powerful, reliable &amp; fully featured Svelte UI library
-    </h1>
+    <h1>Powerful, reliable &amp; fully featured Svelte UI library</h1>
   </div>
 
   <div class="content">
@@ -101,6 +103,24 @@
       Navigate the site to see full examples, demos, code samples, api and event
       details for each component.
     </p>
+  </div>
+
+  <div class="content">
+    <h2>Theming</h2>
+
+    <p>
+      We're rolling out CSS variables for each component, they allow you to
+      override the default theme. If a CSS variable you need is missing feel
+      free to help out and raise a PR.
+    </p>
+
+    {#if theming}
+      <div class="source">
+        <CodeBlock code={theming} />
+      </div>
+    {/if}
+
+    <ThemingSample />
   </div>
 
   <div class="content">
@@ -153,12 +173,5 @@
         </a>
       </li>
     </ul>
-
-    <p>
-      Please feel free to contribute, raise an issue or run the project locally.
-      For details see our
-      <a href="https://github.com/sveltekit/ui" target="_blank">GitHub</a>
-      page.
-    </p>
   </div>
 </div>

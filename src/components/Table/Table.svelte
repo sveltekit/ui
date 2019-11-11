@@ -161,7 +161,7 @@
   }
 
   .loader_spinner {
-    color: var(--green_4);
+    color: var(--green_4, #51ce6c);
     width: 25px;
     height: 25px;
     position: absolute;
