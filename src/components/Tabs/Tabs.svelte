@@ -4,7 +4,6 @@
 
   const dispatch = createEventDispatcher();
 
-  export let tabComponent = undefined;
   export let animate = true;
   export let isCentered = false;
   export let tabs = [];

@@ -26,8 +26,6 @@
   export let cancelText = 'Cancel';
   export let isKeyboardClosable = true;
   export let isOverlayClosable = true;
-  export let target = undefined;
-  export let targetElem = undefined;
   export let height = undefined;
   export let maxWidth = undefined;
   

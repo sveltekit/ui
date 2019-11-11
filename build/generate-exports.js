@@ -92,7 +92,7 @@ function documentCSSVars(dir) {
         let array = content.match(regexp) || [];
 
         array.forEach(item => {
-          let varRx = /(?<=var\()(.*)(?=,)/;
+          let varRx = /(?<=var\().*?(?=,)/;
           let defaultRx = /(?<=,)(.*)(?=\))/;
           let varName = item.match(varRx)[0];
           let defaultValue = item.match(defaultRx)[0].trim();

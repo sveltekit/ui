@@ -15,7 +15,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      sveltekit: path.resolve(__dirname, '../'),
+      '@sveltekit/ui': path.resolve(__dirname, '../'),
       stores: path.resolve(__dirname, '../src/app/stores.js')
     },
     extensions: ['.mjs', '.js', '.svelte']
@@ -29,7 +29,6 @@ module.exports = {
     rules: [
       {
         test: /\.svelte$/,
-        // exclude: excludeModules,
         use: {
           loader: 'svelte-loader',
           options: {

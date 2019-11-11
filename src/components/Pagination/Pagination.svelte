@@ -17,7 +17,6 @@
   export let showSummary = true;
   export let showPages = true;
   export let buttonType = buttonOptions.type.PRIMARY_LINK;
-  export let defaultCurrent = 1;
 
   let prev_total = undefined;
   let prev_pageSize = undefined;

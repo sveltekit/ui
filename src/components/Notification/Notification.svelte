@@ -24,8 +24,6 @@
   export let maxWidth = undefined;
   export let actions = undefined;
   export let isTimedAction = false;
-  export let targetElem = undefined;
-  export let key = undefined;
   export let promise = undefined;
 
   const animationEvent = whichAnimationEvent();

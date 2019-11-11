@@ -3,8 +3,6 @@
   import Dropdown from '@sveltekit/ui/Dropdown';
   import CustomList from './_CustomList.svelte';
 
-  export let isActive = undefined;
-
   function handleSelect(event) {
     // handle event
   }

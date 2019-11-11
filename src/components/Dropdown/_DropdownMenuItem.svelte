@@ -4,7 +4,6 @@
 
   const dispatch = createEventDispatcher();
 
-  export let items = [];
   export let isClickable = false;
   export let isSelected = false;
   export let isMulti = false;
