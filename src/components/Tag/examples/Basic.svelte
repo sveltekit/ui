@@ -1,6 +1,6 @@
 <script>
-  import Tag from 'sveltekit/Tag';
-  import { options } from 'sveltekit/Tag';
+  import Tag from '@sveltekit/ui/Tag';
+  import { options } from '@sveltekit/ui/Tag';
 
     import { HEART } from '../../Icon/_iconData';
 

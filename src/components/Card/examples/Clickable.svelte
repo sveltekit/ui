@@ -1,5 +1,5 @@
 <script>
-  import Card, { options } from 'sveltekit/Card';
+  import Card, { options } from '@sveltekit/ui/Card';
 
   export let count = 0;
   export let isClickable = true;

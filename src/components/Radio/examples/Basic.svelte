@@ -1,5 +1,5 @@
 <script>
-  import Radio from 'sveltekit/Radio';
+  import Radio from '@sveltekit/ui/Radio';
 
   let selected = null;
 </script>

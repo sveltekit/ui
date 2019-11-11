@@ -1,9 +1,9 @@
 <script>
   import randomColor from 'randomcolor';
 
-  import Icon from 'sveltekit/Icon';
-  import Card from 'sveltekit/Card';
-  import Button from 'sveltekit/Button';
+  import Icon from '@sveltekit/ui/Icon';
+  import Card from '@sveltekit/ui/Card';
+  import Button from '@sveltekit/ui/Button';
   
   import {HEART} from '../../Icon/_iconData';
 

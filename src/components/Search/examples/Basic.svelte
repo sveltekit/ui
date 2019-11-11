@@ -1,5 +1,5 @@
 <script>
-  import Search from 'sveltekit/Search';
+  import Search from '@sveltekit/ui/Search';
 
   let searchText = '';
 </script>

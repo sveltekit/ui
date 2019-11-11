@@ -1,8 +1,8 @@
 <script>
-  import Button from 'sveltekit/Button';
-  import Checkbox from 'sveltekit/Checkbox';
-  import TextInput from 'sveltekit/TextInput';
-  import { notification, options } from 'sveltekit/Notification';
+  import Button from '@sveltekit/ui/Button';
+  import Checkbox from '@sveltekit/ui/Checkbox';
+  import TextInput from '@sveltekit/ui/TextInput';
+  import { notification, options } from '@sveltekit/ui/Notification';
 
   let title = 'Example Title';
   let text = 'Some text!';

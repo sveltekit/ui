@@ -1,5 +1,5 @@
 <script>
-  import DatePicker from 'sveltekit/DatePicker';
+  import DatePicker from '@sveltekit/ui/DatePicker';
 
   let date;
   let toDate;

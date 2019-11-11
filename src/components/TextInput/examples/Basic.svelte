@@ -1,5 +1,5 @@
 <script>
-  import TextInput from 'sveltekit/TextInput';
+  import TextInput from '@sveltekit/ui/TextInput';
   let value = '';
 </script>
 

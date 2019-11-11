@@ -1,5 +1,5 @@
 <script>
-  import Avatar, { options } from 'sveltekit/Avatar';
+  import Avatar, { options } from '@sveltekit/ui/Avatar';
 
   export let src = '/avatar_example.gif';
 </script>

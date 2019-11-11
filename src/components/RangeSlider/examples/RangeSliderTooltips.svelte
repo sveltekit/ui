@@ -1,6 +1,6 @@
 <script>
   import wNumb from 'wnumb';
-  import RangeSlider from 'sveltekit/RangeSlider';
+  import RangeSlider from '@sveltekit/ui/RangeSlider';
   
   let values = [0,100];
   let tooltip = wNumb({ decimals: 1 });

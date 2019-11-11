@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
-  import Avatar, { options } from 'sveltekit/Avatar';
-  import Tooltip from 'sveltekit/Tooltip';
+  import Avatar, { options } from '@sveltekit/ui/Avatar';
+  import Tooltip from '@sveltekit/ui/Tooltip';
 
   import CodeBlock from './CodeBlock.svelte';
   import ThemingSample from './ThemingSample.svelte';
@@ -89,7 +89,7 @@
   <div class="content">
     <h2>Getting started</h2>
 
-    <code>$ npm i sveltekit</code>
+    <code>$ npm install @sveltekit/ui</code>
 
     <p>Import a component and it's options (if needed)</p>
 

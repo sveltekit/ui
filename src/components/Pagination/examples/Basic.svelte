@@ -1,5 +1,5 @@
 <script>
-  import Pagination from 'sveltekit/Pagination';
+  import Pagination from '@sveltekit/ui/Pagination';
 
   let current = 1;
   let pageSize = 10;

@@ -1,5 +1,5 @@
 <script>
-  import DatePicker from 'sveltekit/DatePicker';
+  import DatePicker from '@sveltekit/ui/DatePicker';
 
   let date = '01/11/2011';
   let altFormat = 'd/m/Y';

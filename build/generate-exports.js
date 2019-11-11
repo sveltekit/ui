@@ -37,9 +37,9 @@ function componentIndex(dir) {
     function CreateContent() {
       let doc = `import components from '../../../src/components/index';\n`
       if (item.options) {
-        doc += `import ${item.name}, { options } from 'sveltekit/${item.name}';\n`
+        doc += `import ${item.name}, { options } from '@sveltekit/ui/${item.name}';\n`
       } else {
-        doc += `import ${item.name} from 'sveltekit/${item.name}';\n`
+        doc += `import ${item.name} from '@sveltekit/ui/${item.name}';\n`
       }
 
       if (item.examples) {

@@ -1,6 +1,6 @@
 <script>
-  import Button from 'sveltekit/Button';
-  import Checkbox from 'sveltekit/Checkbox';
+  import Button from '@sveltekit/ui/Button';
+  import Checkbox from '@sveltekit/ui/Checkbox';
 
   let isChecked = true;
   let isDisabled = true;

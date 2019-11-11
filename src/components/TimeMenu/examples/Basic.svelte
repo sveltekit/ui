@@ -1,5 +1,5 @@
 <script>
-  import TimeMenu from 'sveltekit/TimeMenu';
+  import TimeMenu from '@sveltekit/ui/TimeMenu';
 </script>
 
 <TimeMenu />

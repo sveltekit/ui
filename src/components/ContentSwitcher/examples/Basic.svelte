@@ -1,6 +1,6 @@
 <script>
-  import ContentSwitcher from 'sveltekit/ContentSwitcher';
-  import Icon from 'sveltekit/Icon';
+  import ContentSwitcher from '@sveltekit/ui/ContentSwitcher';
+  import Icon from '@sveltekit/ui/Icon';
   import {CAR, HOTEL, PLANE} from '../../Icon/_iconData';
 
   const ItemIconComponent = Icon;

@@ -1,7 +1,7 @@
 <script>
-  import Avatar, { options } from 'sveltekit/Avatar';
-  import NumberInput from 'sveltekit/NumberInput';
-  import Icon from 'sveltekit/Icon';
+  import Avatar, { options } from '@sveltekit/ui/Avatar';
+  import NumberInput from '@sveltekit/ui/NumberInput';
+  import Icon from '@sveltekit/ui/Icon';
   import { PLANE } from '../../Icon/_iconData';
 
 

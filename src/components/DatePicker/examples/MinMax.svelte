@@ -1,5 +1,5 @@
 <script>
-  import DatePicker from 'sveltekit/DatePicker';
+  import DatePicker from '@sveltekit/ui/DatePicker';
 
   let date = '2/1/2021';
   let minDate = '2/1/2021'

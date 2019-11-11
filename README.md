@@ -13,7 +13,7 @@ $  yarn
 To work locally on the components you'll need to yarn link the project to itself
 ```sh
 $  yarn link
-$  yarn link sveltekit
+$  yarn link @sveltekit/ui
 $  yarn dev
 ```
 

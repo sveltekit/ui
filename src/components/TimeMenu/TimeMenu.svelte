@@ -1,9 +1,9 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import Icon from 'sveltekit/Icon';
+  import Icon from '@sveltekit/ui/Icon';
   import { CLOCK } from '../Icon/_iconData';
-  import Dropdown, { options as dropdownOptions } from 'sveltekit/Dropdown';
-  import Tabs from 'sveltekit/Tabs';
+  import Dropdown, { options as dropdownOptions } from '@sveltekit/ui/Dropdown';
+  import Tabs from '@sveltekit/ui/Tabs';
   import Menu from './_Menu.svelte';
 
   export let selectedItem;

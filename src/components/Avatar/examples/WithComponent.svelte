@@ -1,6 +1,6 @@
 <script>
-  import Avatar, { options } from 'sveltekit/Avatar';
-  import Icon from 'sveltekit/Icon';
+  import Avatar, { options } from '@sveltekit/ui/Avatar';
+  import Icon from '@sveltekit/ui/Icon';
   import { PLANE } from '../../Icon/_iconData';
 
   let componentProps = {

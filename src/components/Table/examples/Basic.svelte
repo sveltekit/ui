@@ -1,5 +1,5 @@
 <script>
-  import Table from 'sveltekit/Table';
+  import Table from '@sveltekit/ui/Table';
 
   const columns = [
     {

@@ -1,6 +1,6 @@
 <script>
-  import Button from 'sveltekit/Button';
-  import Dropdown from 'sveltekit/Dropdown';
+  import Button from '@sveltekit/ui/Button';
+  import Dropdown from '@sveltekit/ui/Dropdown';
   import {MORE} from '../../Icon/_iconData';
 
   export let items = [{

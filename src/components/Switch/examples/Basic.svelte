@@ -1,5 +1,5 @@
 <script>
-  import Switch from 'sveltekit/Switch';
+  import Switch from '@sveltekit/ui/Switch';
 </script>
 
 <Switch></Switch>

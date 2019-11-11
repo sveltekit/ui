@@ -1,6 +1,6 @@
 <script>
   import classnames from 'classnames';
-  import Icon from 'sveltekit/Icon';
+  import Icon from '@sveltekit/ui/Icon';
   import { ALERT } from '../Icon/_iconData';
   import options from './options';
 

@@ -1,6 +1,6 @@
 <script>
-  import Button from 'sveltekit/Button';
-  import ProgressBar from 'sveltekit/ProgressBar';
+  import Button from '@sveltekit/ui/Button';
+  import ProgressBar from '@sveltekit/ui/ProgressBar';
 
   let isAnimated = true;
   let value = 30;

@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import Button from 'sveltekit/Button';
+  import Button from '@sveltekit/ui/Button';
 
   export let selectedItem;
   export let options = []; 

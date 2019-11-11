@@ -1,5 +1,5 @@
 <script>
-  import Tabs from 'sveltekit/Tabs';
+  import Tabs from '@sveltekit/ui/Tabs';
   import Tab1 from './_tab1.svelte';
   import Tab2 from './_tab2.svelte';
 

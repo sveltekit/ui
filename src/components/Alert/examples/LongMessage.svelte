@@ -1,5 +1,5 @@
 <script>
-  import Alert, { options } from 'sveltekit/Alert';
+  import Alert, { options } from '@sveltekit/ui/Alert';
   import { INFORMATION } from '../../Icon/_iconData';
 </script>
 

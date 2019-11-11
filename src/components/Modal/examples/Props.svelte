@@ -1,9 +1,9 @@
 <script>
   import { onDestroy } from 'svelte';
 
-  import Checkbox from 'sveltekit/Checkbox';
-  import Button from 'sveltekit/Button';
-  import Modal from 'sveltekit/Modal';
+  import Checkbox from '@sveltekit/ui/Checkbox';
+  import Button from '@sveltekit/ui/Button';
+  import Modal from '@sveltekit/ui/Modal';
   import modalService from '../modal';
 
   let modal = undefined;

@@ -1,8 +1,8 @@
 <script>
   import dayjs from 'dayjs';
   import customParseFormat from 'dayjs/plugin/customParseFormat';
-  import Card, { options as cardOptions } from 'sveltekit/Card';
-  import Tabs from 'sveltekit/Tabs';
+  import Card, { options as cardOptions } from '@sveltekit/ui/Card';
+  import Tabs from '@sveltekit/ui/Tabs';
   import TimeOptions from './_TimeOptions.svelte';
 
   dayjs.extend(customParseFormat);
