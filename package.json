@@ -1,10 +1,10 @@
 {
-  "name": "sveltekit",
+  "name": "@sveltekit/ui",
   "description": "Svelte UI Library",
   "version": "1.0.0",
   "homepage": "https://github.com/sveltekit/ui",
   "publishConfig": {
-    "registry": "https://github.com/sveltekit/ui.git"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "generateExports": "node build/generate-exports.js",
