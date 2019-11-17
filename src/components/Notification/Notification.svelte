@@ -311,8 +311,7 @@
       {#each Object.entries(actions) as [actionText, actionMethod]}
         <Button
           on:click={() => onActionClick(actionMethod)}
-          size={buttonOptions.size.COMPACT}
-          type={isDark ? buttonOptions.type.GHOST : buttonOptions.type.PRIMARY_LINK}>
+          size={buttonOptions.size.COMPACT}>
           {actionText}
         </Button>
       {/each}

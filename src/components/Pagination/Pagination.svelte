@@ -16,7 +16,6 @@
   export let total = 0;
   export let showSummary = true;
   export let showPages = true;
-  export let buttonType = buttonOptions.type.PRIMARY_LINK;
 
   let prev_total = undefined;
   let prev_pageSize = undefined;
@@ -141,7 +140,6 @@
         <div class="page">
           <Button
             isBlock
-            type="{buttonType}"
             size="{buttonOptions.size.MINI}"
             isSelected="{current === page}"
             on:click="{() => onPageClick(page)}">
@@ -155,12 +153,12 @@
   { #if canNavigate }
     <div class="navigation">
       <div class="arrow">
-        <Button type="{buttonType}" size="{buttonOptions.size.MINI}" iconData="{CHEVRON_LEFT}"
+        <Button size="{buttonOptions.size.MINI}" iconData="{CHEVRON_LEFT}"
           isDisabled="{ IsFirstPage }" on:click="{onPrevClick}">
         </Button>
       </div>
       <div class="arrow">
-        <Button type="{buttonType}" size="{buttonOptions.size.MINI}" iconData="{CHEVRON_RIGHT}"
+        <Button size="{buttonOptions.size.MINI}" iconData="{CHEVRON_RIGHT}"
           isDisabled="{ IsLastPage }" on:click="{onNextClick}">
         </Button>
       </div>

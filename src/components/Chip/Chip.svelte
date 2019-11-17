@@ -8,8 +8,6 @@
   import Button from '../Button/Button.svelte';
   import Icon from '../Icon/Icon.svelte';
   import Spinner from '../Spinner/Spinner.svelte';
-
-  import buttonOptions from '../Button/options';
   import {REMOVE} from '../Icon/_iconData';
 
   export let avatar = null;
@@ -85,7 +83,7 @@
 
 
 <div class="chip {ClassNames}">
-  <Button size="compact" type="{buttonOptions.type.SUBTLE}" on:click="{onButtonClick}" {isActive} {isDisabled}
+  <Button size="compact" on:click="{onButtonClick}" {isActive} {isDisabled}
     isRounded>
     <span class="text">
       <slot></slot>

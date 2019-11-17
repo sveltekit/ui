@@ -89,7 +89,7 @@
   <div class="content">
     <h2>Getting started</h2>
 
-    <code>$ npm install @sveltekit/ui</code>
+    <code>$ npm install @sveltekit/ui -D</code>
 
     <p>Import a component and it's options (if needed)</p>
 

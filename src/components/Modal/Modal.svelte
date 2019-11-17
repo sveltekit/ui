@@ -209,8 +209,7 @@
           on:click="{onCancelClick}"
           iconData="{CLOSE}"
           isDisabled="{isWaiting}"
-          size="{buttonOptions.size.MINI}"
-          type="{buttonOptions.type.LINK}">
+          size="{buttonOptions.size.MINI}">
         </Button>
       </div>
       {/if}

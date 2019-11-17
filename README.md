@@ -5,6 +5,7 @@
 $  npm install @sveltekit/ui
 ```
 
+**Note:** Install as a dev dependency `npm i @sveltekit/ui -D` if using [Sapper](https://sapper.svelte.dev/) to avoid SSR errors.
 
 ## Dev
 

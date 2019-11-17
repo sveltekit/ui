@@ -14,13 +14,4 @@ export default {
     COMPACT: 'compact',
     MINI: 'mini'
   },
-  type: {
-    DEFAULT: 'default',
-    DESTRUCTIVE: 'destructive',
-    LINK: 'link',
-    PRIMARY: 'primary',
-    PRIMARY_LINK: 'primaryLink',
-    SUBTLE: 'subtle',
-    GHOST: 'ghost'
-  }
 }
