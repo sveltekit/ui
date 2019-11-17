@@ -1,6 +1,6 @@
 <script>
   import { beforeUpdate, createEventDispatcher, onMount } from 'svelte';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import Icon from '../Icon/Icon.svelte';
   import { LOCK } from '../Icon/_iconData';
 

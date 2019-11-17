@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import inlinestyles from '../../helpers/inlineStyles';
 
   import Button from '../Button/Button.svelte';

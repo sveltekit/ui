@@ -1,6 +1,6 @@
 <script>
   import { beforeUpdate, createEventDispatcher, onMount } from 'svelte';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import orderBy from 'lodash/orderBy';
   import Pagination from '../Pagination/Pagination.svelte';
   import Spinner from '../Spinner/Spinner.svelte';

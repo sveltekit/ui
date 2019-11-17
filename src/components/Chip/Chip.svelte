@@ -3,7 +3,7 @@
 
   const dispatch = createEventDispatcher();
 
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import Avatar from '../Avatar/Avatar.svelte';
   import Button from '../Button/Button.svelte';
   import Icon from '../Icon/Icon.svelte';

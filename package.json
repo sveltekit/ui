@@ -15,7 +15,6 @@
     "@babel/core": "^7.4.4",
     "autoprefixer": "^9.6.0",
     "babel-loader": "^8.0.6",
-    "classnames": "^2.2.6",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
     "css-vars-ponyfill": "^2.0.2",

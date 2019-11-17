@@ -1,6 +1,6 @@
 <script>
   import { beforeUpdate, onDestroy, onMount } from 'svelte';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import isFinite from 'lodash/isFinite';
 
   import Icon from '../Icon/Icon.svelte';

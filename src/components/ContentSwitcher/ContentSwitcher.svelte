@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
 
   export let items = [];
   export let activeItem = null;

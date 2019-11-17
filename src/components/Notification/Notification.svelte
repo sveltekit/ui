@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher, onMount, onDestroy } from 'svelte';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import whichAnimationEvent from '../../helpers/whichAnimationEvent';
 
   import Button from '../Button/Button.svelte';

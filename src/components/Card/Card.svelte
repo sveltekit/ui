@@ -3,7 +3,7 @@
 
   const dispatch = createEventDispatcher();
 
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
 
   export let isClickable = false;
   export let isClickDisabled = false;

@@ -1,5 +1,5 @@
 <script>
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import { createEventDispatcher } from 'svelte';
 
   import Icon from '../Icon/Icon.svelte';

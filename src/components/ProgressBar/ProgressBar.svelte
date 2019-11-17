@@ -1,5 +1,5 @@
 <script>
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import inlinestyles from '../../helpers/inlineStyles';
   import options from './options';
 

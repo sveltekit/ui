@@ -1,5 +1,5 @@
 <script>
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import Spinner from '../Spinner/Spinner.svelte';
 
   export let isActive = false;

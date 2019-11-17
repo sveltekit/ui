@@ -1,8 +1,8 @@
 <script>
-  import classnames from 'classnames';
   import Icon from '@sveltekit/ui/Icon';
   import { ALERT } from '../Icon/_iconData';
   import options from './options';
+  import { classnames } from '../../helpers/classnames';
 
   export let type = options.type.WARNING;
   export let iconData = ALERT;

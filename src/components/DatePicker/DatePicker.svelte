@@ -2,7 +2,7 @@
   import { beforeUpdate, createEventDispatcher, onDestroy, onMount, tick } from 'svelte';
   import assignIn from 'lodash/assignIn';
   import flatpickr from 'flatpickr';
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
 
   import dayjs from 'dayjs';
   import customParseFormat from 'dayjs/plugin/customParseFormat';
