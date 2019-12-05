@@ -292,7 +292,6 @@
       <div class="closer">
         <Button
           on:click={cancel}
-          size={buttonOptions.size.MINI}
           type={buttonOptions.type.LINK}
           Icon="{ CloseIcon }" />
       </div>

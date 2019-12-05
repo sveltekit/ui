@@ -146,6 +146,9 @@
     position: absolute;
     top: 10px;
     right: 10px;
+
+    --Button-font-size: 20px;
+    --Button-padding: 2px;
   }
 
   .content {
@@ -208,8 +211,7 @@
         <Button
           on:click="{onCancelClick}"
           Icon="{CloseIcon}"
-          isDisabled="{isWaiting}"
-          size="{buttonOptions.size.MINI}">
+          isDisabled="{isWaiting}">
         </Button>
       </div>
       {/if}

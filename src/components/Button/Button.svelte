@@ -82,11 +82,6 @@
     pointer-events: none;
   }
 
-  .iconPosition-only {
-    font-size: 28px;
-    padding: 4px;
-  }
-
   .button:hover {
     background-color: var(--Button-hover-bg-color, var(--green_5));
   }
@@ -136,9 +131,9 @@
 
   .icon {
     display: block;
-    width: 16px;
-    min-width: 16px;
-    height: 16px;
+    width: var(--Button-icon-width, 16px);
+    min-width: var(--Button-icon-min-width, 16px);
+    height: var(--Button-icon-height, 16px);
   }
 
   .icon :global(svg) {
@@ -162,8 +157,8 @@
   }
 
   .iconPosition-only .icon {
-    width: 1em;
-    height: 1em;
+    width: var(--Button-icon-only-width, 1em); 
+    height: var(--Button-icon-only-height, 1em);
   }
 
   .spinner {

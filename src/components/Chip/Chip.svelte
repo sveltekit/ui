@@ -44,6 +44,10 @@
   .chip {
     display: inline-block;
     position: relative;
+
+    --Button-font-size: 13px;	
+    --Button-line-height:	16px;
+    --Button-padding: 7px 16px;
   }
 
   .isRemovable :global(.button) {

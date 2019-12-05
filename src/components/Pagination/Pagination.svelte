@@ -105,6 +105,10 @@
     -webkit-touch-callout: none;
     user-select: none;
     text-align: right;
+
+    --Button-font-size: 12px;	
+    --Button-line-height:	16px;
+    --Button-padding: 4px 6px;
   }
 
   .summary {
@@ -125,6 +129,11 @@
     color: var(--neutral_4);
     display: inline-block;
     vertical-align: middle;
+
+    --Button-padding: 0;
+    --Button-icon-only-width: 24px;
+    --Button-icon-only-height: 24px;
+
   }
 </style>
 
@@ -141,7 +150,6 @@
         <div class="page">
           <Button
             isBlock
-            size="{buttonOptions.size.MINI}"
             isSelected="{current === page}"
             on:click="{() => onPageClick(page)}">
             { page }
@@ -152,14 +160,14 @@
   { /if }
 
   { #if canNavigate }
-    <div class="navigation">
+    <div class="navigationnavigation">
       <div class="arrow">
-        <Button size="{buttonOptions.size.MINI}" Icon="{ ChevronLeftIcon }"
+        <Button Icon="{ ChevronLeftIcon }"
           isDisabled="{ IsFirstPage }" on:click="{onPrevClick}">
         </Button>
       </div>
       <div class="arrow">
-        <Button size="{buttonOptions.size.MINI}" Icon="{ ChevronRightIcon }"
+        <Button Icon="{ ChevronRightIcon }"
           isDisabled="{ IsLastPage }" on:click="{onNextClick}">
         </Button>
       </div>
