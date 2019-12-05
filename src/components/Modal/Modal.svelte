@@ -5,7 +5,7 @@
 
   import Button from '../Button/Button.svelte';
   import buttonOptions from '../Button/options';
-  import { CLOSE } from '../Icon/_iconData';
+  import CloseIcon from '../Icons/Close.svelte';
 
 
   const dispatch = createEventDispatcher();
@@ -207,7 +207,7 @@
       <div class="closer">
         <Button
           on:click="{onCancelClick}"
-          iconData="{CLOSE}"
+          Icon="{CloseIcon}"
           isDisabled="{isWaiting}"
           size="{buttonOptions.size.MINI}">
         </Button>

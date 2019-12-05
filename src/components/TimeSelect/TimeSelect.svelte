@@ -3,8 +3,7 @@
   import dayjs from 'dayjs';
   import Select from 'svelte-select/Select';
 
-  import Icon from '../Icon/Icon.svelte';
-  import { CLOCK } from '../Icon/_iconData';
+  import ClockIcon from '../Icons/Clock.svelte';
 
   const dispatch = createEventDispatcher();
 
@@ -79,7 +78,7 @@
 
 <div class="timeSelect">
   <div class="icon">
-    <Icon iconData="{CLOCK}"></Icon>
+    <ClockIcon />
   </div>
 
   <Select 

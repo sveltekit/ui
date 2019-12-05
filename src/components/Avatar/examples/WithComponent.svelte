@@ -1,11 +1,6 @@
 <script>
   import Avatar, { options } from '@sveltekit/ui/Avatar';
-  import Icon from '@sveltekit/ui/Icon';
-  import { PLANE } from '../../Icon/_iconData';
-
-  let componentProps = {
-    iconData: PLANE
-  }
+  import { Alert as AlertIcon } from '@sveltekit/ui/Icons';
 </script>
 
-<Avatar Component="{Icon}" {componentProps}></Avatar>
+<Avatar Component="{ AlertIcon }"></Avatar>

@@ -3,8 +3,7 @@ import { test } from 'tape-modern';
 import { wait, simulateClick } from 'helpers';
 
 import ContentSwitcher from './ContentSwitcher.svelte';
-import Icon from '../Icon/Icon.svelte';
-import { CAR } from '../Icon/_iconData';
+import CarIcon from '../Icons/Car.svelte';
 
 const testTarget = document.getElementById('testTemplate');
 const componentName = ContentSwitcher.name;
@@ -26,13 +25,13 @@ test(`${componentName}: prop 'items' controls content options`, async (t) => {
     props: {
       items: [
         {
-          label: 'Car',
+          label: 'Car'
         },
         {
-          label: 'Hotel',
+          label: 'Hotel'
         },
         {
-          label: 'Flight',
+          label: 'Flight'
         }
       ]
     }
@@ -48,25 +47,22 @@ test(`${componentName}: props 'ItemIconComponent' and 'items > itemIconProps' ad
   const contentSwitcher = new ContentSwitcher({
     target: testTarget,
     props: {
-      ItemIconComponent: Icon,
       items: [
         {
           label: 'Car',
-          itemIconProps: {
-            iconData: CAR
-          }
+          Icon: CarIcon
         },
         {
-          label: 'Hotel',
+          label: 'Hotel'
         },
         {
-          label: 'Flight',
+          label: 'Flight'
         }
       ]
     }
   });
 
-  t.ok(testTarget.querySelector('path').getAttribute('d') === CAR.data);
+  t.ok(testTarget.querySelector('svg'));
 
   contentSwitcher.$destroy();
 });
@@ -80,16 +76,13 @@ test(`${componentName}: props 'activeItem' sets item as active`, async (t) => {
       },
       items: [
         {
-          label: 'Car',
-          itemIconProps: {
-            iconData: CAR
-          }
+          label: 'Car'
         },
         {
-          label: 'Hotel',
+          label: 'Hotel'
         },
         {
-          label: 'Flight',
+          label: 'Flight'
         }
       ]
     }
@@ -106,16 +99,13 @@ test(`${componentName}: clicking item changes 'activeItem'`, async (t) => {
     props: {
       items: [
         {
-          label: 'Car',
-          itemIconProps: {
-            iconData: CAR
-          }
+          label: 'Car'
         },
         {
-          label: 'Hotel',
+          label: 'Hotel'
         },
         {
-          label: 'Flight',
+          label: 'Flight'
         }
       ]
     }

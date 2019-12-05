@@ -3,8 +3,8 @@
   import { classnames } from '../../helpers/classnames';
   import isFinite from 'lodash/isFinite';
 
-  import Icon from '../Icon/Icon.svelte';
-  import { ARROW_UP, ARROW_DOWN } from '../Icon/_iconData';
+  import ArrowUpIcon from '../Icons/ArrowUp.svelte';
+  import ArrowDownIcon from '../Icons/ArrowDown.svelte';
 
   const MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || Math.pow(2, 53) - 1;
   const MIN_SAFE_INTEGER = Number.MIN_SAFE_INTEGER || -MAX_SAFE_INTEGER;
@@ -274,13 +274,13 @@
 
   <div class="up" on:click="{onUpClick}">
     <span class="icon">
-      <Icon iconData={ARROW_UP}></Icon>
+      <ArrowUpIcon />
     </span>
   </div>
 
   <div class="down" on:click="{onDownClick}">
     <span class="icon">
-      <Icon iconData={ARROW_DOWN}></Icon>
+      <ArrowDownIcon />
     </span>
   </div>
 </div>

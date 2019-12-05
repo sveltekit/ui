@@ -4,11 +4,12 @@
   import whichAnimationEvent from '../../helpers/whichAnimationEvent';
 
   import Button from '../Button/Button.svelte';
-  import Icon from '../Icon/Icon.svelte';
   import Spinner from '../Spinner/Spinner.svelte';
 
   import buttonOptions from '../Button/options';
-  import { ALERT, CHECK, CLOSE } from '../Icon/_iconData';
+  import AlertIcon from '../Icons/Alert.svelte';
+  import CheckIcon from '../Icons/Check.svelte';
+  import CloseIcon from '../Icons/Close.svelte';
 
 
   const dispatch = createEventDispatcher();
@@ -16,7 +17,7 @@
   export let title = '';
   export let text = '';
   export let removeDelay = 3000;
-  export let icon = undefined;
+  export let Icon = undefined;
   export let isClosable = false;
   export let isLoading = false;
   export let isDark = false;
@@ -277,13 +278,13 @@
       <span class="spinner">
         <Spinner />
       </span>
-    {:else if (actions && icon === undefined) || icon === 'alert'}
+    {:else if (actions && Icon === undefined)}
       <span class="actionIcon">
-        <Icon iconData={ALERT} />
+        <AlertIcon />
       </span>
     {:else}
       <span class="notifyIcon">
-        <Icon iconData={CHECK} />
+        <CheckIcon />
       </span>
     {/if}
 
@@ -293,7 +294,7 @@
           on:click={cancel}
           size={buttonOptions.size.MINI}
           type={buttonOptions.type.LINK}
-          iconData={CLOSE} />
+          Icon="{ CloseIcon }" />
       </div>
     {/if}
 

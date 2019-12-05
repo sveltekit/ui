@@ -8,8 +8,9 @@
   import customParseFormat from 'dayjs/plugin/customParseFormat';
   dayjs.extend(customParseFormat);
 
-  import Icon from '../Icon/Icon.svelte';
-  import {CHEVRON_LEFT, CHEVRON_RIGHT, DATE} from '../Icon/_iconData';
+  import DateIcon from '../Icons/Date.svelte';
+  import ChevronLeftIcon from '../Icons/ChevronLeft.svelte';
+  import ChevronRightIcon from '../Icons/ChevronRight.svelte';
 
   const dispatch = createEventDispatcher();
 
@@ -157,10 +158,10 @@
     const fromDate = date || defaultDate;
 
     const prevArrow = document.createElement('div');
-    prevIcon = new Icon({ target: prevArrow, props: { iconData: CHEVRON_LEFT } });
+    prevIcon = new ChevronLeftIcon({ target: prevArrow });
 
     const nextArrow = document.createElement('div');
-    nextIcon = new Icon({ target: nextArrow, props: { iconData: CHEVRON_RIGHT } });
+    nextIcon = new ChevronRightIcon({ target: nextArrow });
 
     if (input) {
       datePicker = flatpickr(input, assignIn({}, defaults, {
@@ -387,7 +388,7 @@
 <div class="datePicker { ClassNames }">
   {#if hasIcon}
     <div class="icon">
-      <Icon iconData="{DATE}"></Icon>
+      <DateIcon />
     </div>
   {/if}
   
@@ -398,10 +399,10 @@
   {#if canNavigate}
     <div class="navigation">
       <div class="navigation_prev { NavigatePrevClassNames }" on:click="{prevDay}">
-        <Icon iconData="{CHEVRON_LEFT}"></Icon>
+        <ChevronLeftIcon />
       </div>
       <div class="navigation_next { NavigateNextClassNames }" on:click="{nextDay}">
-        <Icon iconData="{CHEVRON_RIGHT}"></Icon>
+        <ChevronRightIcon />
       </div>
     </div>
   {/if}

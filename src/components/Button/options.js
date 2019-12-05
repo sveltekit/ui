@@ -7,11 +7,5 @@ export default {
     ONLY: 'only',
     LEFT: 'left',
     RIGHT: 'right'
-  },
-  size: {
-    LARGE: 'large',
-    DEFAULT: 'default',
-    COMPACT: 'compact',
-    MINI: 'mini'
-  },
+  }
 }

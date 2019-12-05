@@ -2,15 +2,12 @@
   import { classnames } from '../../helpers/classnames';
   import { createEventDispatcher } from 'svelte';
 
-  import Icon from '../Icon/Icon.svelte';
   import Spinner from '../Spinner/Spinner.svelte';
   import options from './options';
 
   const dispatch = createEventDispatcher();
 
-  export let size = options.size.DEFAULT;
   export let iconPosition = options.iconPosition.ONLY;
-  export let iconData = null;
   export let isActive = false;
   export let isBlock = false;
   export let isOutlined = false;
@@ -20,11 +17,12 @@
   export let isWide = false;
   export let isDisabled = false;
   export let htmlType = options.htmlType.BUTTON;
+  export let Icon = null;
 
   let ClassNames;
   $: {
-    ClassNames = classnames(`size-${size}`, {
-      [`iconPosition-${iconPosition}`]: iconData,
+    ClassNames = classnames({
+      [`iconPosition-${iconPosition}`]: Icon,
       isActive,
       isBlock,
       isSelected,
@@ -143,6 +141,16 @@
     height: 16px;
   }
 
+  .icon :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon :global(path),
+  .icon :global(polygon) {
+    fill: currentColor;
+  }
+
   .iconPosition-left .icon {
     margin-right: 5px;
     order: -1;
@@ -192,9 +200,9 @@
   {/if}
 
   <span class="inner">
-    {#if iconData}
+    {#if Icon}
       <span class="icon">
-        <Icon {iconData} />
+        <svelte:component this="{ Icon }" />
       </span>
     {/if}
 

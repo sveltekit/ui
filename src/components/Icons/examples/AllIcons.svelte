@@ -1,7 +1,6 @@
 <script>
-  import Icon from '@sveltekit/ui/Icon';
   import Card from '@sveltekit/ui/Card';
-  import * as All from '../_iconData';
+  import * as Icons from '@sveltekit/ui/Icons';
 </script>
 
 <style>
@@ -41,12 +40,14 @@
 </style>
 
 <div class="container">
-  {#each Object.keys(All) as iconKey}
+  {#each Object.keys(Icons) as iconKey}
     <div class="option">
       <Card>
         <div class="icon">
-          <Icon iconData={All[iconKey]} />
+          { #if iconKey !== 'default' }
+          <svelte:component this="{ Icons[iconKey] }" />
           <p>{iconKey}</p>
+          { /if }
         </div>
       </Card>
     </div>

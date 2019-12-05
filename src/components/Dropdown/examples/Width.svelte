@@ -1,7 +1,6 @@
 <script>
   import Button from '@sveltekit/ui/Button';
   import Dropdown from '@sveltekit/ui/Dropdown';
-  import { MORE } from '../../Icon/_iconData';
 
   export let items = [
     {
@@ -22,5 +21,5 @@
 </script>
 
 <Dropdown {items} {width}>
-  <Button iconData={MORE} />
+  <Button>Click me</Button>
 </Dropdown>

@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^9.6.0",
     "babel-loader": "^8.0.6",
     "cross-env": "^5.2.0",
@@ -37,6 +38,7 @@
     "sirv": "^0.4.2",
     "style-loader": "^0.23.1",
     "svelte": "^3.7.0",
+    "svelte-icons": "^1.1.0",
     "svelte-loader": "^2.13.4",
     "svelte-select": "^2.1.0",
     "tape-modern": "^1.1.1",

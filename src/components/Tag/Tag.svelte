@@ -1,10 +1,9 @@
 <script>
   import { classnames } from '../../helpers/classnames';
   import inlinestyles from '../../helpers/inlineStyles';
-  import Icon from '../Icon/Icon.svelte';
   import options from './options';
 
-  export let iconData = null;
+  export let Icon = null;
   export let iconPosition = options.iconPosition.ONLY;
   export let backgroundColour = '#ff9500';
   export let color = '#ffffff';
@@ -12,7 +11,7 @@
   export let ClassNames;
   $: {
     ClassNames = classnames({
-      [`iconPosition-${iconPosition}`]: iconData
+      [`iconPosition-${iconPosition}`]: Icon
     });
   }
 
@@ -79,9 +78,9 @@
 
 <div class="tag {ClassNames}" style={Styles}>
   <div class="inner">
-    {#if iconData}
+    {#if Icon}
       <span class="icon">
-        <Icon {iconData} />
+        <svelte:component this="{ Icon }" />
       </span>
     {/if}
 

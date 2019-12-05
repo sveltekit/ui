@@ -6,9 +6,9 @@
   import { classnames } from '../../helpers/classnames';
   import Avatar from '../Avatar/Avatar.svelte';
   import Button from '../Button/Button.svelte';
-  import Icon from '../Icon/Icon.svelte';
   import Spinner from '../Spinner/Spinner.svelte';
-  import {REMOVE} from '../Icon/_iconData';
+  import buttonOptions from '../Button/options';
+  import RemoveIcon from '../Icons/Remove.svelte';
 
   export let avatar = null;
   export let isRemovable = false;
@@ -98,7 +98,7 @@
 
   { #if isRemovable && !isWaiting }
   <i class="removeIcon" on:click="{onRemoveClick}" style="color: { isActive ? '#fff' : 'inherit' };">
-    <Icon iconData="{REMOVE}"></Icon>
+    <RemoveIcon />
   </i>
   { /if }
 
