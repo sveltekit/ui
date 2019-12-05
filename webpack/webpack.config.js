@@ -10,6 +10,9 @@ components.push('./src/main.js');
 
 
 module.exports = {
+  stats: {
+    errorDetails: true
+  },
   entry: {
     bundle: components
   },
