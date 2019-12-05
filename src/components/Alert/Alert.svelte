@@ -1,5 +1,5 @@
 <script>
-  import classnames from 'classnames';
+  import { classnames } from '../../helpers/classnames';
   import options from './options';
   import AlertIcon from '../Icons/Alert.svelte';
 
