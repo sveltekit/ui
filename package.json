@@ -1,7 +1,7 @@
 {
   "name": "@sveltekit/ui",
   "description": "Svelte UI Library",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "homepage": "https://github.com/sveltekit/ui",
   "repository": "git://github.com/sveltekit/ui.git",
   "scripts": {
