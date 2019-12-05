@@ -10,7 +10,6 @@
   export let type = options.type.DEFAULT;
   export let size = options.size.DEFAULT;
   export let iconPosition = options.iconPosition.ONLY;
-  export let iconData = null;
   export let isActive = false;
   export let isBlock = false;
   export let isOutlined = false;
