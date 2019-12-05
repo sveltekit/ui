@@ -1,7 +1,5 @@
 import { test } from 'tape-modern';
 import Avatar from './Avatar.svelte';
-import Icon from '../Icon/Icon.svelte';
-import { PLANE } from '../Icon/_iconData';
 
 const testTarget = document.getElementById('testTemplate');
 const componentName = Avatar.name;
@@ -88,17 +86,19 @@ test(`${componentName}: prop 'src' should change component's avatar image`, asyn
 
 
 test(`${componentName}: props 'Component' and 'componentProps' should override default component`, async (t) => {
+  const childComponentAlt = 'xxx';
+
   const avatar = new Avatar({
     target: testTarget,
     props: {
-      Component: Icon,
+      Component: Avatar,
       componentProps: {
-        iconData: PLANE
+        alt: childComponentAlt
       }
     }
   });
 
-  t.ok(testTarget.querySelector('.avatar path').getAttribute('d') === PLANE.data);
+  t.ok(testTarget.querySelector('.avatar .avatar .alt').textContent === childComponentAlt);
 
   avatar.$destroy();
 });

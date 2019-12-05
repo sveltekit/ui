@@ -4,8 +4,8 @@
   const dispatch = createEventDispatcher();
 
   import _debounce from 'lodash/debounce';
-  import Icon from '../Icon/Icon.svelte';
-  import {CLOSE, SEARCH} from '../Icon/_iconData';
+  import CloseIcon from '../Icons/Close.svelte';
+  import SearchIcon from '../Icons/Search.svelte';
 
   import TextInput from '../TextInput/TextInput.svelte';
 
@@ -60,13 +60,13 @@
 <div class="container">
   <TextInput {placeholder} {value} on:input={onInput}>
     <div class="prepend" slot="prepend">
-      <Icon iconData="{SEARCH}" />
+      <SearchIcon />
     </div>
   </TextInput>
 
   { #if value}
   <div class="clearIcon" on:click="{onClearIconClick}">
-    <Icon iconData={CLOSE}></Icon>
+    <CloseIcon />
   </div>
   { /if }
 </div>

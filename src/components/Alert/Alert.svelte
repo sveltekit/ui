@@ -1,11 +1,9 @@
 <script>
   import classnames from 'classnames';
-  import Icon from '@sveltekit/ui/Icon';
-  import { ALERT } from '../Icon/_iconData';
   import options from './options';
+  import AlertIcon from '../Icons/Alert.svelte';
 
   export let type = options.type.WARNING;
-  export let iconData = ALERT;
 
   $: ClassNames = classnames(`type-${type}`);
 </script>
@@ -45,7 +43,7 @@
 <div class="alert {ClassNames}">
 
   <div class="icon">
-    <Icon {iconData} />
+    <AlertIcon />
   </div>
 
   <div class="content">

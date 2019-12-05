@@ -1,7 +1,6 @@
 <script>
   import Button from '@sveltekit/ui/Button';
   import Dropdown from '@sveltekit/ui/Dropdown';
-  import {MORE} from '../../Icon/_iconData';
 
   export let items = [{
     label: 'Menu Item 1',
@@ -20,5 +19,5 @@
 </script>
 
 <Dropdown { items } { isHoverable }>
-  <Button iconData={MORE}></Button>
+  <Button>Hover me</Button>
 </Dropdown>
