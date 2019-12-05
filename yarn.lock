@@ -123,6 +123,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@fortawesome/fontawesome-free@^5.11.2":
+  version "5.11.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.11.2.tgz#8644bc25b19475779a7b7c1fc104bc0a794f4465"
+  integrity sha512-XiUPoS79r1G7PcpnNtq85TJ7inJWe0v+b5oZJZKb0pGHNIV6+UiNeQWiFGmuQ0aj7GEhnD/v9iqxIsjuRKtEnQ==
+
 "@polka/url@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-0.5.0.tgz#b21510597fd601e5d7c95008b76bf0d254ebfd31"
@@ -4960,6 +4965,11 @@ svelte-dev-helper@^1.1.9:
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz#7d187db5c6cdbbd64d75a32f91b8998bde3273c3"
   integrity sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=
+
+svelte-icons@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/svelte-icons/-/svelte-icons-1.1.0.tgz#f992947889136bdb07ef907b3d288723fcda4b3f"
+  integrity sha512-i43a3nPJufH3M+LQn71Li1f6PoA4Vx+8pV6fGnoFczwA6v8OT5o7B0LBf7LKViG9BVJNvFxGube4t/KQBN7rzg==
 
 svelte-loader@^2.13.4:
   version "2.13.6"

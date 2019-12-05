@@ -90,11 +90,10 @@
 <div class="contentSwitcher">
   {#each items as item, i}
       <div class="contentSwitcher_item { itemClassNames(item, activeItem, size) }" on:click="{() => onItemClick(item)}">
-        {#if (ItemIconComponent || item.ItemIconComponent) && item.itemIconProps}
+        {#if item.Icon}
           <div class="contentSwitcher_item_icon">
             <svelte:component
-              this="{item.ItemIconComponent || ItemIconComponent}"
-              {...item.itemIconProps}
+              this="{ item.Icon }"
             >
             </svelte:component>
           </div>

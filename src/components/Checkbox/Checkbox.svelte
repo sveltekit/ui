@@ -48,6 +48,7 @@
   }
 
   .check::after {
+    content: "";
     top: 50%;
     left: 21%;
     display: table;
@@ -62,7 +63,6 @@
   }
 
   .check.checked::after {
-    content: '';
     border: 2px solid #fff;
     border-top: 0;
     border-left: 0;

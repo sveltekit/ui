@@ -1,7 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import Icon from '@sveltekit/ui/Icon';
-  import { CLOCK } from '../Icon/_iconData';
+  import { Clock as ClockIcon } from '@sveltekit/ui/Icons';
   import Dropdown, { options as dropdownOptions } from '@sveltekit/ui/Dropdown';
   import Tabs from '@sveltekit/ui/Tabs';
   import Menu from './_Menu.svelte';
@@ -49,7 +48,7 @@
 <Dropdown MenuComponent={Menu} {placement} isBlock bind:selectedItem>
   <div class="toggle" tabindex="0">
     <span class="icon">
-      <Icon iconData={CLOCK} />
+      <ClockIcon />
     </span>
     <span class="value">{selectedItem || placeholder}</span>
   </div>

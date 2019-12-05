@@ -8,7 +8,8 @@
 
   import Button from '../Button/Button.svelte';
   import buttonOptions from '../Button/options';
-  import { CHEVRON_LEFT, CHEVRON_RIGHT } from '../Icon/_iconData';
+  import ChevronLeftIcon from '../Icons/ChevronLeft.svelte';
+  import ChevronRightIcon from '../Icons/ChevronRight.svelte';
 
   export let canNavigate = true;
   export let current = 1;
@@ -155,12 +156,12 @@
   { #if canNavigate }
     <div class="navigation">
       <div class="arrow">
-        <Button type="{buttonType}" size="{buttonOptions.size.MINI}" iconData="{CHEVRON_LEFT}"
+        <Button type="{buttonType}" size="{buttonOptions.size.MINI}" Icon="{ ChevronLeftIcon }"
           isDisabled="{ IsFirstPage }" on:click="{onPrevClick}">
         </Button>
       </div>
       <div class="arrow">
-        <Button type="{buttonType}" size="{buttonOptions.size.MINI}" iconData="{CHEVRON_RIGHT}"
+        <Button type="{buttonType}" size="{buttonOptions.size.MINI}" Icon="{ ChevronRightIcon }"
           isDisabled="{ IsLastPage }" on:click="{onNextClick}">
         </Button>
       </div>

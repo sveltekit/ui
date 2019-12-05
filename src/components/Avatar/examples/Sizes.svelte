@@ -1,18 +1,14 @@
 <script>
   import Avatar, { options } from '@sveltekit/ui/Avatar';
   import NumberInput from '@sveltekit/ui/NumberInput';
-  import Icon from '@sveltekit/ui/Icon';
-  import { PLANE } from '../../Icon/_iconData';
+  import { Alert as AlertIcon } from '@sveltekit/ui/Icons';
 
 
   let image = '/avatar_example.gif';
   let customSize = 150;
   let initials = 'HI';
 
-  let Component = Icon;
-  let componentProps = {
-    iconData: PLANE
-  };
+  let Component = AlertIcon;
 </script>
 
 <style>
@@ -54,10 +50,10 @@
 <div class="row">
   {#each Object.entries(options.size) as [sizeKey, size]}
     <span>
-      <Avatar {Component} {componentProps} {size} />
+      <Avatar {Component} {size} />
     </span>
   {/each}
   <span>
-    <Avatar {Component} {componentProps} size={customSize} />
+    <Avatar {Component} size={customSize} />
   </span>
 </div>

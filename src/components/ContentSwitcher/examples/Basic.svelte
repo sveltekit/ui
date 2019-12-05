@@ -1,30 +1,21 @@
 <script>
   import ContentSwitcher from '@sveltekit/ui/ContentSwitcher';
-  import Icon from '@sveltekit/ui/Icon';
-  import {CAR, HOTEL, PLANE} from '../../Icon/_iconData';
-
-  const ItemIconComponent = Icon;
+  import { Alert, Add, ArrowUp } from '@sveltekit/ui/Icons';
 
   const items = [
     {
-      label: 'Car',
-      itemIconProps: {
-        iconData: CAR
-      }
+      label: 'Tab 1',
+      Icon: Alert
     },
     {
-      label: 'Hotel',
-      itemIconProps: {
-        iconData: HOTEL
-      }
+      label: 'Tab 2',
+      Icon: Add
     },
     {
-      label: 'Flight',
-      itemIconProps: {
-        iconData: PLANE
-      }
+      label: 'Tab 3',
+      Icon: ArrowUp
     }
   ]
 </script>
 
-<ContentSwitcher {items} {ItemIconComponent}></ContentSwitcher>
+<ContentSwitcher {items}></ContentSwitcher>
