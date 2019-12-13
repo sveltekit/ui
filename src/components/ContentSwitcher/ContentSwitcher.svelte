@@ -33,9 +33,9 @@
 
 <style>
   .contentSwitcher {
-    --ContentSwitcher_primary_1: var(--primary_1);
+    --ContentSwitcher_primary: var(--primary_1);
     
-    border: 1px solid var(--ContentSwitcher_primary_1);
+    border: 1px solid var(--ContentSwitcher_primary, var(--primary_1));
     border-radius: 3px;
     display: flex;
   }
@@ -48,7 +48,7 @@
     cursor: pointer;
     flex-shrink: 1;
     flex-grow: 1;
-    color: var(--ContentSwitcher_primary_1);
+    color: var(--ContentSwitcher_primary, var(--primary_1));
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
@@ -69,7 +69,7 @@
   }
 
   .contentSwitcher_item.active {
-    background: var(--ContentSwitcher_primary_1);
+    background: var(--ContentSwitcher_primary, var(--primary_1));
     color: #fff;
   }
 
