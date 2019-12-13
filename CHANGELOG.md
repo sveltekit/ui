@@ -1,5 +1,9 @@
 # CHANGELOG.md
 
+## 3.1.0 (14/12/2019)
+
+- Improved ContentSwitcher's CSS custom properties
+
 ## 3.0.0 (06/12/2019)
 
 - BREAKING CHANGE: Icon component refactored, now individually import the icon you need.
