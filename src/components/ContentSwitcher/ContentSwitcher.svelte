@@ -4,7 +4,6 @@
 
   export let items = [];
   export let activeItem = null;
-  export let ItemIconComponent = null;
   export let isActive = null;
   export let size = 'default';
 

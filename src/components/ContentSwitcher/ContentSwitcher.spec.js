@@ -43,30 +43,6 @@ test(`${componentName}: prop 'items' controls content options`, async (t) => {
 });
 
 
-test(`${componentName}: props 'ItemIconComponent' and 'items > itemIconProps' adds icons to rendered items`, async (t) => {
-  const contentSwitcher = new ContentSwitcher({
-    target: testTarget,
-    props: {
-      items: [
-        {
-          label: 'Car',
-          Icon: CarIcon
-        },
-        {
-          label: 'Hotel'
-        },
-        {
-          label: 'Flight'
-        }
-      ]
-    }
-  });
-
-  t.ok(testTarget.querySelector('svg'));
-
-  contentSwitcher.$destroy();
-});
-
 test(`${componentName}: props 'activeItem' sets item as active`, async (t) => {
   const contentSwitcher = new ContentSwitcher({
     target: testTarget,
