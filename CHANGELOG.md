@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+## 3.1.1 (29/12/2019)
+
+- Removed unused prop 'ItemIconComponent' from ContentSwitcher
+- Cleaned up Alert component
+
 ## 3.1.0 (14/12/2019)
 
 - Improved ContentSwitcher's CSS custom properties
