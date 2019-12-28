@@ -2,9 +2,7 @@
   import Alert, { options } from '@sveltekit/ui/Alert';
   import InformationIcon from '../../Icons/Information.svelte';
 
-
   export let warning = 'Warning! Hot food! 🔥🔥🔥🔥';
-  export let information = 'Information!';
 </script>
 
 <div class="row">
@@ -12,9 +10,7 @@
 </div>
 
 <div class="row">
-  <Alert
-    type={options.type.INFORMATION}
-    Icon={InformationIcon}>
-    {information}
+  <Alert type={options.type.INFORMATION}>
+  {warning}
   </Alert>
 </div>

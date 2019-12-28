@@ -21,13 +21,11 @@ test(`${componentName}: should render slot content`, async (t) => {
   const avatar = new Basic({
     target: testTarget,
     props: {
-      warning: 'He is on f 🔥 i 🔥 r 🔥 e 🔥 !',
-      information: 'This is some information!!'
+      warning: 'He is on f 🔥 i 🔥 r 🔥 e 🔥 !'
     }
   });
   
   t.equal(testTarget.querySelectorAll('.alert .content')[0].textContent, avatar.warning);
-  t.equal(testTarget.querySelectorAll('.alert .content')[1].textContent, avatar.information);
 
   avatar.$destroy();
 });
