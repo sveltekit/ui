@@ -45,7 +45,7 @@
 
 <style>
   .button {
-    background-color: var(--Button-bg-color, var(--green_4));
+    background: var(--Button-bg, var(--green_4));
     color: var(--Button-color, var(--white));
     border: var(--Button-border, none);
     border-radius: var(--Button-radius, 3px);
@@ -75,7 +75,7 @@
 
   .button:focus {
     outline: none;
-    background-color: var(--Button-focus-bg-color, var(--green_5));
+    background: var(--Button-focus-bg, var(--green_5));
   }
 
   .button.isActive {
@@ -83,21 +83,21 @@
   }
 
   .button:hover {
-    background-color: var(--Button-hover-bg-color, var(--green_5));
+    background: var(--Button-hover-bg, var(--green_5));
   }
 
   .button:active {
-    background-color: var(--Button-active-bg-color, var(--green_6));
+    background: var(--Button-active-bg, var(--green_6));
   }
 
   .button.isOutlined {
-    background-color: var(--Button-outlined-bg-color, var(--white));
+    background: var(--Button-outlined-bg, var(--white));
     border: var(--Button-outlined-border, 1px solid var(--green_4));
     color: var(--Button-outlined-color, var(--green_4));
   }
 
   .button.isSelected {
-    background-color: var(--Button-selected-bg-color, var(--green_6));
+    background: var(--Button-selected-bg, var(--green_6));
   }
 
   .button.isOutlined:active {
