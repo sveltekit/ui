@@ -1,5 +1,10 @@
 # CHANGELOG.md
 
+
+## 4.0.0 (30/01/2020)
+
+- BREAKING CHANGE: Button: changed CSS prop background-color -> background
+
 ## 3.1.1 (29/12/2019)
 
 - Removed unused prop 'ItemIconComponent' from ContentSwitcher
