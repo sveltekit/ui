@@ -1,3 +1,5 @@
+# Not in active dev anymore - plenty of other UI libs out there...
+
 # Sveltekit - Powerful, reliable & fully featured Svelte UI library
 
 ## Getting started
